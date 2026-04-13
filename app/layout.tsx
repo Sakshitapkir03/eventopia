@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     'Eventopia is a global event platform where you can create, discover, and register for events. Powered by Stripe payments and Clerk authentication.',
   icons: {
-    icon: '/assets/images/logo.svg',
+    icon: '/icon.svg',
   },
 }
 
