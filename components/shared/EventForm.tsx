@@ -211,7 +211,7 @@ export default function EventForm({ userId, type, event, eventId }: EventFormPro
           <Label className="text-gray-700 font-medium mb-1.5 block">Price</Label>
           <div className="flex items-center h-[54px] w-full rounded-full bg-gray-50 border border-gray-200 px-4 focus-within:ring-2 focus-within:ring-primary-400 transition-all">
             <DollarSign className="w-5 h-5 text-gray-400 mr-2 flex-shrink-0" />
-            <Input type="number" {...register('price')} placeholder="Price" disabled={isFree} className="border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0" />
+            <Input type="number" step="0.01" min="0" {...register('price')} placeholder="Price" disabled={isFree} className="border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0" />
             <div className="flex items-center gap-2 ml-auto flex-shrink-0">
               <input type="checkbox" id="isFree" checked={isFree} onChange={(e) => setValue('isFree', e.target.checked)} className="w-4 h-4 accent-primary-400" />
               <label htmlFor="isFree" className="whitespace-nowrap text-sm font-medium text-gray-700 cursor-pointer">Free Event</label>
